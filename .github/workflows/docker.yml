@@ -30,8 +30,8 @@ jobs:
            password: ${{ secrets.GITHUB_TOKEN }}
 
       
-      - run: docker build -t ghcr.io/denovaa/python-app:latest .
-      - run: docker push ghcr.io/denovaa/python-app:latest
+      - run: docker build -t ghcr.io/denovadenis/python-app:latest .
+      - run: docker push ghcr.io/denovadenis/python-app:latest
 
 
   deploy: 
@@ -46,8 +46,8 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN }}
 
-        - run: docker pull ghcr.io/denovaa/python-app:latest
-        - run: docker run ghcr.io/denovaa/python-app:latest
+        - run: docker pull ghcr.io/denovadenis/python-app:latest
+        - run: docker run ghcr.io/denovadenis/python-app:latest
 
 
      
