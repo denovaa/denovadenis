@@ -2,7 +2,7 @@ FROM python
 
 WORKDIR /app
 
-COPY main.py.
+COPY main.py .
 
 ENTRYPOINT [ "python" , "main.py"]
 
